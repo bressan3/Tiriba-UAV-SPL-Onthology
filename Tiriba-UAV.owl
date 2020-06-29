@@ -1,0 +1,1370 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#configurationShouldSatisfy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#configurationShouldSatisfy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasIntegrityLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasIntegrityLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#integrityLevelShouldSatisfy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#integrityLevelShouldSatisfy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#shouldBeSatisfiedByIntegrityLevel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requiresForCert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requiresForCert">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#shouldBeSatisfiedByIntegrityLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#shouldBeSatisfiedByIntegrityLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksAgainstCert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksAgainstCert">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksForCert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksForCert">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#expectedCertLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#expectedCertLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasIntegrityLevel"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AbortMission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AbortMission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Agriculture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Agriculture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AutoPilot"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmission"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Small"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolled-Base -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolled-Base">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Agriculture"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Small"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Uncontrolled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolledB-Base -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolledB-Base">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <hasBase rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolled-Base"/>
+        <hasIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B"/>
+        <requiresForCert rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#FlightAreaDelimitation"/>
+        <worksForCert rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#DataIntegrityChecking"/>
+        <worksForCert rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SmartSensorInterface"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolledB-Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolledB-Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <hasBase rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AgricultureSmallUncontrolledB-Base"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultLaunching"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherRadar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Airspace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Airspace"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Application -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Application"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AutoPilot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AutoPilot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultLaunching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultLaunching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultMechanism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultMechanism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultMechanism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Controlled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Controlled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#MissionAbortion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#IntegrityLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#DataIntegrityChecking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#DataIntegrityChecking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Defence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Defence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <makesOptional rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AutoPilot"/>
+        <makesOptional rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#DefenseLightControlledA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#DefenseLightControlledA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Configuration"/>
+        <hasIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Controlled"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Defence"/>
+        <implements rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Light"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Dimension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Dimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#EnviroMonitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#EnviroMonitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AutoPilot"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#FlightAreaDelimitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#FlightAreaDelimitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#ObjectCollisionDetector"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherAdvisor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Heavy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Heavy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultLaunching"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#ParachuteLanding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Light -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Light">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <excludes rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultLaunching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#MissionAbortion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#MissionAbortion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#AbortMission"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#PositioningAccuracy"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#RouteCorrection"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#RouteTracking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#ObjectCollisionDetector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#ObjectCollisionDetector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#ParachuteLanding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#ParachuteLanding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#PositioningAccuracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#PositioningAccuracy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#RouteCorrection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#RouteCorrection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#RouteTracking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#RouteTracking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Small -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Small">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <makesOptional rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#CatapultLaunching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SmartSensorInterface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SmartSensorInterface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SoftwareDevelopmentObjective1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SoftwareDevelopmentObjective1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#C"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SoftwarePlanningObjective1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SoftwarePlanningObjective1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#C"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#D"/>
+        <rdfs:label>The activities of the software life cycle processes are defined.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SoftwarePlanningObjective2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#SoftwarePlanningObjective2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#C"/>
+        <rdfs:label>The software life cycle(s), including the inter-relationships between the processes, their sequencing, feedback mechanisms, and transition criteria, is defined.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#TemperatureSensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#TemperatureSensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Uncontrolled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Uncontrolled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <makesOptional rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#MissionAbortion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VerificationOfOutputsOfSoftwareRequirementsObjective1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VerificationOfOutputsOfSoftwareRequirementsObjective1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Objective"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#A"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#B"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#C"/>
+        <shouldBeSatisfiedByIntegrityLevel rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#D"/>
+        <rdfs:label>High-level requirements comply with system requirements.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmitter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#VideoTransmitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherAdvisor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherAdvisor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherRadar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherRadar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#WeatherRadar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#Feature"/>
+        <requires rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#TemperatureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#swl1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#obj1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksForCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksForCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S15</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#configurationShouldSatisfy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#configurationShouldSatisfy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S13</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requiresForCert"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requiresForCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S14</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksAgainstCert"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksAgainstCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S12</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasBase"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksForCert"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#worksForCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#cc1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#hasIntegrityLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#swl1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#integrityLevelShouldSatisfy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#swl1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#obj1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#configurationShouldSatisfy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#obj1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#makesOptional"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f3"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S11</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#implements"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#excludes"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#pv1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requiresForCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requires"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#requiresForCert"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#v1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lucas/ontologies/2019/7/untitled-ontology-11#f2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
